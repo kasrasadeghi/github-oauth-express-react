@@ -1,0 +1,21 @@
+{
+  "name": "github-oauth-express-react",
+  "version": "1.0.0",
+  "description": "a basic github oauth with react and express",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "kasrasadeghi",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3"
+  }
+}
